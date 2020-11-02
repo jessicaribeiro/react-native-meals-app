@@ -36,7 +36,7 @@ const CategoriesScreen = props => {
 CategoriesScreen.navigationOptions = (navData) => { //navdata para aceder a navigation
     return {
         headerTitle: 'Meal Categories',
-        headerLeft:
+        headerLeft: () =>
             <HeaderButtons
                 HeaderButtonComponent={CustomHeaderButton}>
                 <Item title='Menu' iconName='ios-menu' onPress={() => {

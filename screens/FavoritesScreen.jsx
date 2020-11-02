@@ -16,7 +16,7 @@ const FavoritesScreen = props => {
 FavoritesScreen.navigationOptions = (navData) => { //navdata para aceder a navigation
     return {
         headerTitle: 'My Favorites',
-        headerLeft:
+        headerLeft: () =>
             <HeaderButtons
                 HeaderButtonComponent={CustomHeaderButton}>
                 <Item title='Menu' iconName='ios-menu' onPress={() => {
